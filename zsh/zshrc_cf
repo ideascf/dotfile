@@ -1,0 +1,36 @@
+ZSH_THEME="bira"
+
+# Which plugins would you like to load? (plugins can be found in ~/.oh-my-zsh/plugins/*)
+# Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
+# Example format: plugins=(rails git textmate ruby lighthouse)                                         
+# Add wisely, as too many plugins slow down shell startup.
+plugins=(
+zsh_reload  # zsh reload
+git  # Some git alias
+git-flow  # git flow model
+python # Add : pyfind pygrep pyclean
+pyenv  # virtualenv??
+pip  # for pip••
+supervisor  # for supervisor
+sudo  # Define shortcut keys: [Esc] [#Esc], Add 'sudo' into head of cmd-line.
+cp  # Add cmd 'cpv': copy with progress-bar, and more...
+extract  # using 'x' to extract everythings: *.tar.gz tgz  *.tar.bz2 *.zip *.rar ...
+z  # fast jump into your working data-dir, For Example: z doc -> ~/documents/
+history  # 'h' for history, 'hs' for history | grep, 'hsi' for greping history
+tmux  # enhanced tmux support
+encode64  # CMD-LINE base64 support, 'e64' to encode, 'd64' to decode
+urltools  # CMD-LINE urltools support.
+docker  # docker
+celery  # celery
+colored-man-pages  # colored man pages
+zsh-syntax-highlighting  # zsh syntax highlighting
+)
+
+
+# Customer for me
+# 扩展一些自定义的快捷方式
+export PATH="$PATH:~/.shortcut/"
+# 配合ShadowSock使用
+alias pc4='proxychains4'
+# 使用virtualenv作为python2，避免污染系统python2
+. ~/py2_vir/bin/activate
